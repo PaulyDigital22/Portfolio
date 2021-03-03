@@ -2,13 +2,13 @@ html,h1,h2,h3,h4,h5,h6,a{
     font-family: "Raleway";
 }
 
-.navbar { 
-    background-color:white;
-    margin: 0 auto;
+body {
+    overflow-x: hidden;
 }
 
-.navbar-brand {
-    padding: 0;
+.navbar { 
+    background-color:white;
+    margin: 0;
 }
 
 .navbar-nav li {
@@ -54,21 +54,33 @@ html,h1,h2,h3,h4,h5,h6,a{
 .description h1 {
     color: white;
 }
-.description p{
+.description p {
     color:white;
     font-size: 20px;
     line-height: 1.5;
 }
 
-.description button{
+.description button {
     border: white solid 1px;
     color:#fff;
+    outline: none;
+}
+
+.description button:hover {
+    background-color: white;
+    color: lightgray;
+}
+
+.description a:hover {
+    text-decoration: none;
+    color: lightgray;
 }
 
 .about{ 
     margin: 4em auto;
     padding: 1em;
     position: relative;
+    border-bottom: solid lightgrey 1px;
 }
 .about h1 {
     color:lightgray;
@@ -84,11 +96,12 @@ html,h1,h2,h3,h4,h5,h6,a{
     display: block;
     color: #888;
     position: absolute;
-    left: 145px;
+    left: 100px;
 }
 .about .desc {
     padding: 2em;
-    border-left:2px solid #000;
+    border-left:1px solid lightgrey
+    ;
 }
 .about .desc h3 {
     color: #000000;
@@ -99,8 +112,11 @@ html,h1,h2,h3,h4,h5,h6,a{
 }
 
 .portfolio {
-    margin: 4em 0;
+    justify-items: center;
+    margin: 2em auto;
+    padding: 1em;
     position: relative; 
+    border-bottom: solid lightgrey 1px;
 }
 
 .portfolio h1 {
@@ -108,7 +124,9 @@ html,h1,h2,h3,h4,h5,h6,a{
     margin: 2em; 
 }
 .portfolio img {
+    justify-items: center;
     height: 15rem;
     width: 100%;
     margin: 1em;
 }
+
